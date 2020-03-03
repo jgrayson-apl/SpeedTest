@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Connection Speed Test</title>
+    <!-- End Responsive -->
+    <link rel="icon" href="./assets/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/css/main.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./app/dojo.js"></script>
+    <script src="https://js.arcgis.com/4.14/"></script>
+    <script src="https://survey123beta.arcgis.com/api/jsapi"></script>
+    <script>
+      require(["Application/Main"], function(Main){
+        const mainApplicaiton = new Main();
+      });
+    </script>
+  </head>
+  <body>
+
+    <div id="header-panel" class="panel panel-dark-blue trailer-half">
+      <div class="font-size-2">Connection Speed Test</div>
+    </div>
+
+    <div id="connection-test-panel" class="panel panel-white panel-no-border">
+      <div class="trailer-half">
+        <mark class="label label-blue font-size-3">1</mark>
+        <div class="inline-block padding-left-half">Test Current Internet Speed</div>
+      </div>
+      <div class="panel panel-dark-blue panel-no-border"></div>
+      <div id="speed-test-panel" class="panel panel-light-blue panel-no-border">
+        <div class="text-center">
+          <button id="speed-test-btn" class="btn btn-large btn-green font-size-1 icon-ui-dashboard leader-quarter trailer-half">click here to test download speed</button>
+          <div id="speed-test-label" class="font-size-0 avenir-bold-italic text-white">...</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="survey-panel" class="panel panel-white panel-no-border hide">
+      <div class="trailer-half">
+        <mark class="label label-blue font-size-3">2</mark>
+        <div class="inline-block padding-left-half">Submit Internet Speed Survey</div>
+      </div>
+      <div id="survey123-webform" class="panel panel-no-padding panel-no-border"></div>
+    </div>
+
+  </body>
+</html>
