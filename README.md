@@ -2,4 +2,4 @@
 
 Showing how to use the new Survey123 JS based form.
 
-Test App: https://apl.esri.com/jg/SpeedTest/index.html
+Test App: [Connection Speed Test](https://geoxc-apps2.bd.esri.com/DataCollection/SpeedTest/index.html)
